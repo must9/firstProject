@@ -1,0 +1,750 @@
+:root {
+    --main-color: #EB5569;
+    --second-color: #020F36;
+    --admin-color: #6F84D4
+}
+
+body {
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+    background-color: #FFF;
+}
+
+/* Start Navbar Top */
+
+.navbar .navbar-brand { margin-right: 0 !important }
+
+.navbar .navbar-brand img { max-width: 60%;float: right }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 200px) and (max-width: 576px) {
+    
+    .navbar .navbar-brand img { max-width: 50% }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 200px) and (max-width: 991px) {
+    
+    .navbar .navbar-nav { float: right;text-align: right }  
+}
+
+.navbar .navbar-nav li:last-of-type {
+    background-color: var(--main-color);
+    margin-right: 15px;
+    width: 100px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 16px #eaeaea;
+    -mox-box-shadow: 0 5px 16px #eaeaea;
+    -o-box-shadow: 0 5px 16px #eaeaea;
+    -ms-box-shadow: 0 5px 16px #eaeaea;
+    box-shadow: 0 5px 16px #eaeaea;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    
+    .navbar .navbar-nav li:last-of-type { margin-right: 0 }
+    
+}
+
+.navbar .navbar-nav li:last-of-type a { color: #FFF }
+
+/* End Navbar Top */
+
+
+/* Start Intro */
+.intro {
+    background-image: url("../images/bg.jpg");
+    height: 400px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    -ms-background-position: center;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .text {
+    position: relative;
+    z-index: 1;
+    color: #FFF
+}
+
+.intro .text h1 { font-size: 3rem;font-weight: bold;margin-bottom: 15px }
+
+.intro .text span { 
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: bold
+}
+
+.intro:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6)
+}
+/* End Intro */
+
+
+/* Start statistics Section */
+.statistics {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.statistics .head-title { margin-top: 0 }
+
+@media (min-width: 200px) and (max-width: 576px) {
+    
+    .statistics .head-title { font-size: 22px }
+}
+
+.statistics .content { margin-top: 30px }
+
+.statistics .content .box {
+    -webkit-box-shadow: 5px 5px 10px #e1e1e1;
+    -moz-box-shadow: 5px 5px 10px #e1e1e1;
+    -o-box-shadow: 5px 5px 10px #e1e1e1;
+    -ms-box-shadow: 5px 5px 10px #e1e1e1;
+    box-shadow: 5px 5px 10px #e1e1e1;
+    min-height: 250px;
+    padding: 20px 0 
+}
+
+.statistics .content .box h5 { color: var(--main-color);font-weight: bold }
+
+.statistics .content .box img { max-width: 30%;margin-top: 20px;margin-bottom: 20px }
+
+.statistics .content .box .status-number { display: block;font-size: 20px }
+
+/* End statistics Section */
+
+
+/* Start About Covid19 Section */
+.about-covid19 {
+    background-image: url("../images/about-covid19.jpg");
+    height: 400px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    -ms-background-position: center;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-covid19 .text {
+    position: relative;
+    z-index: 1
+}
+
+.about-covid19 .text .h3 { color: var(--main-color);font-weight: bold }
+
+.about-covid19 .text p {
+    max-width: 800px;
+    margin: 30px auto 0;
+    color: #e3e3e3;
+    line-height: 1.9
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+    
+    .about-covid19 .text p { 
+        font-size: 13px;
+        max-width: 600px;
+        margin: 15px auto 0;
+        color: #FFF
+    }
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    
+    .about-covid19 .text p { padding-left: 15px;padding-right: 15px }
+}
+
+.about-covid19:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6)
+}
+
+/* End About Covid19 Section */
+
+
+/* Start About Covid19 Section */
+.corona-symptoms {
+    background-color: var(--second-color);
+    color: #FFF;
+    padding: 80px 0
+}
+
+.corona-symptoms .head-title { color: var(--main-color) }
+
+.corona-symptoms .content { margin-top: 20px }
+
+.corona-symptoms .content .box { 
+    margin-bottom: 40px;
+}
+
+.corona-symptoms .content .box img {
+    max-width: 30%;
+    margin-bottom: 12px
+}
+
+/* End About Covid19 Section */
+
+
+/* Start Vist Doctor */
+.visit-doctor {
+    padding: 80px 0 0;
+    background-image: url("../images/01%20(1).png");
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    
+    .visit-doctor { padding: 50px 0 0 }
+}
+
+.visit-doctor .head-title { color: var(--main-color) }
+
+@media (min-width: 200px) and (max-width: 768px) {
+    
+    .visit-doctor .head-title { font-size: 22px }
+}
+
+.visit-doctor .text,
+.visit-doctor .img { margin-top: 40px }
+
+.visit-doctor .text p {
+    color: #333;
+    line-height: 1.9;
+    font-size: 18px
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .visit-doctor .text p { font-size: 16px }
+}
+
+.visit-doctor .img img { max-width: 75% }
+/* End Vist Doctor */
+
+
+/* Start Corona Virus Protection  Section */
+.corona-protection {
+    padding: 80px 0;
+    background-color: #f5f5f5
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .corona-protection { padding: 50px 0 }
+}
+
+.corona-protection .h3 { color: var(--main-color) }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .corona-protection .h3 { font-size: 22px }
+}
+
+.corona-protection p {
+    max-width: 800px;
+    margin: 20px auto 0;
+    line-height: 1.9;
+    font-size: 18px
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .corona-protection p { font-size: 16px }
+}
+/* End Corona Virus Protection  Section */
+
+
+/* Start Protection and Health Section */
+.health  {
+    padding: 80px 0;
+    background-image: url("../images/01%20(1).png");
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .health { padding: 50px 0 }
+}
+
+.health .text .head-title { color: #555 } 
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .health .text .head-title { font-size: 22px }
+}
+
+.health .text ul.list-unstyled { padding-right: 0;margin-top: 30px }
+
+.health .text ul li { margin-bottom: 18px }
+
+.health .text ul li span img { max-width: 25px }
+
+.health .img img { width: 100% }
+
+/* End Protection and Health Section */
+
+
+/* Start Footer */
+footer {
+    padding: 80px 0 0;
+    -webkit-box-shadow: -5px -5px 8px #f5f5f5;
+    -moz-box-shadow: -5px -5px 8px #f5f5f5;
+    -o-box-shadow: -5px -5px 8px #f5f5f5;
+    -ms-box-shadow: -5px -5px 8px #f5f5f5;
+    box-shadow: -5px -5px 8px #f5f5f5;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    footer { margin-top: 40px }
+}
+
+footer .about-website .h4 { color: var(--main-color);font-weight: bold }
+
+footer .about-website p { 
+    color: #555;
+    line-height: 1.9;
+    margin-top: 15px;
+    font-size: 14px
+}
+
+footer .read .h4 { color: var(--main-color);font-weight: bold }
+
+footer .read ul { margin-top: 15px }
+
+footer .read ul li { 
+    color: #555;
+    margin-bottom: 12px;
+    font-size: 14px
+}
+
+footer .read ul li span i { color: var(--main-color) }
+
+footer .copyright { 
+    background-color: #f5f5f5;
+    padding: 25px 0;
+    margin-top: 40px;
+    color: #555
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    footer .copyright .designer-by,
+    footer .copyright .c-rights { text-align: center !important }
+}
+
+footer .copyright .designer-by h6,
+footer .copyright .c-rights h6 { font-size: 14px }
+
+footer .copyright .designer-by span { color: var(--main-color) }
+
+footer .copyright .c-rights span { color: var(--main-color) }
+/* End Footer */
+
+
+/* Start Admin Login Page */
+.admin-login .login { margin-top: 100px }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .admin-login .login { margin-top: 40px }
+}
+
+.admin-login .login h3 { color: #555;margin-bottom: 30px }
+
+.admin-login .login form .form-group .form-control { 
+    direction: ltr;
+    height: 56px;
+    border: 1px solid #e1e1e1;
+    padding: 10px 25px;
+    font-size: 16px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+
+.admin-login .login form .btn-primary {
+    width: 100%;
+    height: 56px;
+    background-color: var(--admin-color);
+    font-size: 18px
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.admin-login .login span.home { margin-top: 40px }
+
+.admin-login .login span.home a { color: var(--admin-color) }
+
+@media (min-width: 200px) and (max-width: 768px) {
+    
+    .img img { width: 100% }
+}
+
+/* End Admin Login Page */
+
+
+/* Start About Code for Iraq Page */
+.about-codeforiraq {
+    padding: 100px 0
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .about-codeforiraq { padding: 60px 0 }
+}
+
+.about-codeforiraq .head-title { 
+    margin-bottom: 0;
+    color: var(--main-color)
+}
+
+
+.about-codeforiraq img { max-width: 20%;margin: 20px 0 }
+
+.about-codeforiraq .text h4 { font-weight: bold;color: #555 }
+
+.about-codeforiraq .text p {
+    color: #777;
+    line-height: 1.9;
+    font-size: 18px;
+    margin-top: 35px
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .about-codeforiraq .text p { font-size: 16px;margin-top: 20px }
+}
+/* End About Code for Iraq Page */
+
+
+/* Start About Data Page */
+.data { padding: 100px 0 }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .data { padding: 60px 0 }
+}
+
+.data .head-title {
+    margin-bottom: 0;
+    color: var(--main-color)
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .data .head-title { font-size: 22px }
+}
+
+.data img { margin: 30px 0;max-width: 100% }
+/* End About Data Page */
+
+
+/* Start Statistics Page */
+.Statistics { padding: 100px 0 }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .Statistics { padding: 60px 0 }
+}
+
+.Statistics .head-title {
+    margin-bottom: 0;
+    color: var(--main-color)
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .Statistics .head-title { font-size: 22px }
+}
+
+.Statistics .table { margin: 50px 0 0 }
+
+.Statistics .table thead tr th { color: var(--admin-color) }
+
+/* End Statistics Page */
+
+
+/* Start Maps Page */
+.maps { padding: 80px 0 100px }
+
+.maps i { color: var(--main-color) }
+
+.maps #map {
+    width: 100%;
+   height: 400px;
+   background-color: grey;
+    margin-top: 30px
+}
+
+.maps .map {
+    background-image: url("../images/map.png");
+    
+}
+/* End Maps Page */
+
+
+/* Start User Login Page */
+.user-login { 
+    max-width: 500px;
+    margin: auto;
+    padding: 100px 0
+}
+
+.user-login form { margin-top: 40px }
+
+.user-login form .form-group .form-control {
+    height: 56px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding: 10px 25px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.user-login form .btn-primary {
+    background-color: var(--admin-color);
+    height: 56px;
+    color: #FFF;
+    font-size: 16px;
+    border: 1px solid var(--admin-color);
+    width: 100%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.user-login form .signup { display: block;margin: 20px;color: #888 }
+
+.user-login form .signup a { color: var(--admin-color) }
+/* End User Login Page */
+
+
+/* Start User Register Page */
+.user-register { 
+    padding: 80px 0;
+    max-width: 800px;
+    margin: auto 
+}
+
+.user-register h3 { color: #555 }
+
+.user-register form { margin-top: 40px }
+
+.user-register form .form-group label { 
+    float: right;
+    color: #b0b0b0
+}
+
+.user-register form .form-group .form-control {
+    height: 56px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding: 10px 25px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.user-register form .btn-primary {
+    float: right;
+    width: 200px;
+    font-size: 16px;
+    height: 56px;
+    background-color: var(--admin-color);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px; 
+}
+/* End User Register Page */
+
+
+/* Start Team Page */
+.team { padding: 100px 0;background-color: #f5f5f5 }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .team { padding: 60px 0;background-color: #FFF }
+}
+
+.team .head-title { color: #555 }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .team .head-title { color: var(--main-color);font-size: 22px }
+}
+
+.team .img { margin-top: 50px;margin-bottom: 20px }
+
+.team .info { margin: 50px 0;float: right; }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .team .img { margin-top: 30px }
+    
+   .team .info { 
+       margin: 15px 0 !important;
+       float: none;
+    }
+}
+
+.team .info .sub-title { text-transform: capitalize }
+
+.team .info span { text-transform: capitalize }
+
+.team .info span i { color: var(--main-color) }
+
+.team .info address i { color: var(--main-color) }
+
+.team .info ul a { text-decoration: none }
+
+.team .info ul li:first-of-type { 
+    margin-bottom: 12px;
+    color: var(--main-color);
+    text-transform: capitalize
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .team .info ul li:first-of-type { margin-bottom: 15px }
+}
+
+.team .info ul li i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #FFF
+}
+/* End Team Page */
+
+
+/* Start Call Us Page */
+.call-us { padding: 100px 0 }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .call-us { padding: 60px 0 }
+}
+
+.call-us .head-title { color: var(--main-color) }
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .call-us .head-title { font-size: 22px }
+}
+
+.call-us form {
+    max-width: 600px;
+    margin: 50px auto 0
+}
+
+.call-us form input[type="text"] { height: 56px }
+
+.call-us form .form-control { padding: 15px 25px;border: 1px solid #e1e1e1 }
+
+.call-us form .btn-primary {
+    float: right;
+    background-color: var(--admin-color);
+    font-size: 16px;
+    height: 56px;
+    border: 1px solid var(--admin-color);
+    width: 200px
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    
+    .call-us form .btn-primary { margin-bottom: 30px }
+}
+/* End Call Us Page */
+
+
+/* Start animate Scroll Top */
+.scrollTop {
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    background-color: var(--main-color);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 99999;
+    display: none
+}
+
+a.scrollTop:hover { color: #FFF }
+
+
+/* End animate Scroll Top */
+
+

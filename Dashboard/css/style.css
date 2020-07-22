@@ -1,0 +1,143 @@
+body {
+    direction: rtl;
+    font-family: 'Changa', sans-serif;
+    background-color: #eceff4;
+}
+
+/* Start Navbar Top */
+.navbar {
+    padding: 15px 0;
+    background-color: #FFF;
+}
+
+.navbar .navbar-brand { font-size: 14px }
+
+@media (min-width: 200px) and (max-width: 991px) {
+    
+    .navbar .navbar-nav { 
+        float: right;
+        text-align: right;
+        margin-top: 15px
+    }  
+}
+
+@media (min-width: 200px) and (max-width: 575px) {
+    
+    .navbar .navbar-toggler { margin-left: 25px !important }
+}
+
+.navbar .navbar-nav li { font-size: 14px }
+
+.navbar .dropdown-menu {
+    right: 0;
+    top: 50px;
+    text-align: right;
+    min-width: 300px;
+    padding: 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar .dropdown-menu .team-msg { 
+    display: block;
+    font-size: 14px;
+    color: #6F84D4;
+    margin-bottom: 12px
+}
+
+.navbar .dropdown-menu a { 
+    text-decoration: none;
+    font-size: 14px;
+    color: #888
+}
+
+.navbar .dropdown-menu .time { 
+    font-size: 12px;
+    display: block;
+    margin-top: 12px;    
+}
+
+.navbar .dropdown-menu .dropdown-divider { margin-top: 18px }
+
+/* End Navbar Top */
+
+
+/* Start User Profile Page */
+.profile {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 60px 20px;
+    background-color: #FFF;
+}
+
+.profile .head-title { color: #888e99 }
+
+.profile form { margin: 30px 0 }
+
+.profile form .form-group label { float: right;color: #616571 }
+
+.profile form .form-group .form-control {
+    height: 50px;
+    background-color: #eceff4;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.profile form .btn-primary {
+    float: right;
+    padding: 10px;
+    background-color: #6F84D4;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+/* End User Profile Page */
+
+
+/* Start Doctor Message Page */
+.doctor-message {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 60px 20px;
+    background-color: #FFF;
+}
+
+.doctor-message .head-title { color: #888e99 }
+
+.doctor-message form { margin: 30px 0 }
+
+.doctor-message form .form-group label { float: right;color: #616571 }
+
+.doctor-message form .form-group .form-control {
+    height: 50px;
+    background-color: #eceff4;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.doctor-message form .form-group textarea.form-control { height: auto }
+
+.doctor-message form .btn-primary {
+    float: right;
+    padding: 10px;
+    background-color: #6F84D4;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+/* End Doctor Message Page */
+
+
